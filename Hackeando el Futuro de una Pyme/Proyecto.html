@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resurrección Digital de la Empresa</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 1rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff0;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        /* Estilos para pantalla de error */
+        #error-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ff0000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        /* Estilos para el chatbot */
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10;
+        
+            
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            overflow-y: auto;
+            margin: 20px auto;
+            padding: 10px;
+            display: none;
+            background-color: white;
+            color: black;
+        }
+        #chatbot-input {
+            width: 200px;
+            padding: 5px;
+        }
+            
+        
+
+        /* Estilos para el modo oscuro */
+        body.dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        header.dark-mode {
+            background-color: #ff4500;
+        }
+
+        /* Estilos para secciones */
+        section {
+            display: none;
+            transition: opacity 0.3s;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        /* Estilos para animaciones y glitch */
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-5px, 0); }
+            40% { transform: translate(5px, 0); }
+            60% { transform: translate(-3px, 0); }
+            80% { transform: translate(3px, 0); }
+        }
+
+        .glitch {
+            animation: glitch 1s infinite;
+        }
+
+        /* Estilos para responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Pantalla de error inicial -->
+   
+    <div id="error-screen" onclick="recoverFromError()">¡Error 404! Estrellas Tech Haz clic para recuperar</div>
+
+    <header>
+        <nav>
+            <ul>
+                <img src="Estrellas Tech.png"  width="100" height="100"alt="Estrellas Tech Logo">
+                <li><a href="#" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('historia')">Historia del misterio</a></li>
+                <li><a href="#" onclick="showSection('servicios')">Servicios reinventados</a></li>
+                <li><a href="#" onclick="showSection('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="active">
+            <h1 class="glitch">Bienvenido a Estrellas Tech</h1>
+            <p>En Estrellas Tech, nos dedicamos a la innovación y a la transformación digital. Nuestra empresa 
+                ha resurgido más fuerte que nunca, ofreciendo soluciones tecnológicas de vanguardia.</p>
+        </section>
+        <section id="historia">
+            <h2>Historia del misterio</h2>
+            <p>Una noche, nuestra presencia digital desapareció sin dejar rastro. Pero con tecnología, creatividad e ingenio, hemos 
+                vuelto más fuertes que nunca. Nuestra empresa ha reinventado su presencia digital, utilizando las últimas 
+                tecnologías y estrategias de seguridad para proteger nuestra información y a nuestros clientes.</p>
+        </section>
+        <section  id="servicios">
+            <h2>Servicios</h2>
+            <p>Nuevos servicios y funcionalidades para una era digital 
+                más segura y atractiva. Ofrecemos soluciones 
+                de inteligencia artificial, desarrollo de software 
+                personalizado y soporte técnico 24/7.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3783.9432405291996!2d-69.8730549199572!3d18.486230025380774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDI5JzEwLjQiTiA2OcKwNTInMDUuNSJX!5e0!3m2!1ses-419!2sdo!4v1742598297427!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Envíanos un mensaje para más información.</p>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo electrónico">
+                <textarea placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Resurrección Digital</p>
+    </footer>
+   
+    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Modo Oscuro</button>
+
+   
+
+    <div id="chatbox">
+        <p><strong>Chatbot:</strong> ¡Hola! ¿En qué puedo ayudarte?</p>
+        <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje...">
+        <button onclick="chatbotGuide()">Enviar</button>
+    </div>
+   
+
+    <script>
+
+function fetchData() {
+            // URL de la API (cambia esta URL por la de la API que quieres usar)
+            const url = 'https://api.example.com/data';
+
+            // Hacer una petición GET usando fetch
+            fetch(url)
+                .then(response => response.json()) // Parsear la respuesta JSON
+                .then(data => {
+                    // Mostrar los datos en el div con id="data"
+                    document.getElementById('data').innerHTML = JSON.stringify(data, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error al obtener los datos:', error);
+                });
+        }
+
+        // JavaScript para efectos visuales y funcionalidades
+        function recoverFromError() {
+            document.getElementById('error-screen').style.display = 'none';
+        }
+
+        function chatbotGuide() {
+            alert('¡Bienvenido! ¿En qué puedo ayudarte hoy?');
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+        }
+
+        // Mostrar secciones
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+                if (section.id === id) {
+                    section.classList.add('active');
+                }
+            });
+        }
+
+        // Easter egg
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'e' && e.ctrlKey) {
+                alert('¡Has encontrado el Easter Egg!');
+            }
+        });
+
+        // Mostrar la sección de inicio al cargar la página
+        window.onload = () => {
+            showSection('inicio');
+        };
+    </script>
+</body>
+</html>
